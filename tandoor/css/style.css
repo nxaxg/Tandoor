@@ -35,16 +35,19 @@ li{
 button:focus{
     outline: none;
 }
+
+*:hover{
+    transition: 0.2s;
+}
+
 /*HEADER*/
 
 .header-desktop{
     position: fixed;
     width: 100%;
-    height: 130px;
+    height: auto;
     z-index: 5;
-}
-
-.hdr-dsktp-uno{
+    transition: 0.5s;
 }
 
 .header-desktop #logo{
@@ -54,7 +57,7 @@ button:focus{
 }
 
 .header-desktop #logo img{
-    width: 95%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -76,21 +79,18 @@ button:focus{
 }
 
 .header-desktop nav{
+    width: 80%;
     float: left;
-    margin-left: 20%;
-    width: 60%;
 }
 
-.header-desktop .main-nav{
+.header-desktop .main-nav ul{
     width: 100%;
-    float: right;
-    top: 0;
     height: 80px;
     padding: 25px 0;
 }
 
-.header-desktop .main-nav li{
-    float: left;
+.header-desktop nav .main-nav li{
+    float: right;
     padding: 15px 20px;
     cursor: pointer;
 }
@@ -120,14 +120,58 @@ button:focus{
     background-color: #ACD17A;
 }
 
+/*sticky header*/
+.sticky-header{
+    background-color: rgba(165, 188, 83,0.8);
+    transition: 0.5s;
+}
+
+.sticky-header .lang{
+    display: none;
+}
+
+.sticky-header #logo img{
+    width: 60%;
+}
+
+.sticky-header nav{
+    position: absolute;
+    width: 80%;
+    right: 5%;
+    bottom: 0;
+}
+
+.sticky-header .nav-sel,
+.sticky-header .nav-op:hover{
+    border-bottom: 3px solid white;
+}
+
+.sticky-header #nav-delivery{
+    border: 1px solid white;
+}
+
+.sticky-header #nav-delivery:hover{
+    background-color: white;
+    color: #ACD17A;
+}
+
 /*main*/
 .main{
     height: 700px;
     padding: 15% 0;
 }
 
+/*main-headers*/
 .mn-home{
     background: url(../img/header-home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+}
+
+.mn-menu{
+    background: url(../img/header-menu-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
