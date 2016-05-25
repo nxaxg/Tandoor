@@ -28,22 +28,22 @@
             </figure>
             <div class="lang">
                 <button class="lang-btn">
-                    Español <span class="fa fa-chevron-down"></span>
+                    <span id="lang-show"></span> <span class="fa fa-chevron-down" id="lang-down"></span>
                 </button>
+                <ul class="lang-menu">
+                    <li class="lang-op lang-sel"><a href="#">Español</a></li>
+                    <li class="lang-op"><a href="#">Inglés</a></li>
+                    <li class="lang-op"><a href="#">Portugués</a></li>
+                    <li class="lang-op"><a href="#">Hindi</a></li>
+                </ul>
             </div>
-            <ul class="lang-menu">
-                <li><a href="#">Español</a></li>
-                <li><a href="#">Inglés</a></li>
-                <li><a href="#">Portugués</a></li>
-                <li><a href="3">Hindi</a></li>
-            </ul>
             <nav>
                 <ul class="main-nav">
-                    <li><a href="#" id="nav-delivery">Delivery</a></li>
-                    <li class="nav-op"><a href="#">Contacto</a></li>
-                    <li class="nav-op"><a href="#">Reserva</a></li>
-                    <li class="nav-op"><a href="#">Quiénes somos</a></li>
-                    <li class="nav-op"><a href="#">Vinos</a></li>
+                    <li><a href="delivery.html" id="nav-delivery">Delivery</a></li>
+                    <li class="nav-op"><a href="contacto.html">Contacto</a></li>
+                    <li class="nav-op"><a href="reserva.html">Reserva</a></li>
+                    <li class="nav-op"><a href="quienes-somos.html">Quiénes somos</a></li>
+                    <li class="nav-op"><a href="vinos.html">Vinos</a></li>
                     <li class="nav-sel"><a href="menu.html">Menú</a></li>
                     <li class="nav-op"><a href="index.html">Home</a></li>
                 </ul>
@@ -58,11 +58,13 @@
             <p class="main-par">Elaboramos todos nuestros platos de forma casera, sin agregados de color ni sabores artificiales. Todas nuestras especias son mezcladas por nosotros mismos.</p>
         </div>
         <div class="main-down">
-                <span class="fa fa-chevron-down"></span>
-            </div>
+                <a href="#content">
+                    <span class="fa fa-chevron-down"></span>
+                </a>
+        </div>
     </section>
     
-    <section class="content-1 horarios">
+    <section id="content" class="content-1 horarios">
         <div class="container-60">
             <h2 class="content-title">Nuestros horarios</h2>
         </div>

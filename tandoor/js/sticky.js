@@ -1,8 +1,25 @@
 $(document).ready(function(){
-    header();
+    //starting function
+    $(".lang-menu").hide();
+    
+    $("#lang-show").html($('.lang-sel').html());
+    //sticky header call
+    stickyHeader();
+    //lang-btn animation
+    $(".lang-btn").click(function(){
+        $(".lang-menu").slideToggle();
+        $("#lang-down").toggleClass('lang-menu-action');
+        $(this).toggleClass('lang-active');
+        $(".lang-op").click(function(){
+           $(this).siblings().removeClass('lang-sel');
+           $(this).addClass('lang-sel');
+            var idioma = $(this).html();
+            $("#lang-show").html(idioma);
+        });
+    });
 });
 
-function header(){
+function stickyHeader(){
     var tope = 2; /*from top*/
       $(window).scroll(function() {
         var scroll = posActual(); /*posicion actual*/
@@ -19,3 +36,4 @@ function header(){
         return window.pageYOffset || document.documentElement.scrollTop;
     };
 };
+

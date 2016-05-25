@@ -21,6 +21,7 @@ li{
 .container-90{
     width: 90%;
     margin: 0 auto;
+    overflow: visible;
 }
 
 .container-60{
@@ -28,16 +29,8 @@ li{
     margin: 0 auto
 }
 
-.lang-menu{
-    display: none;
-}
-
 button:focus{
     outline: none;
-}
-
-*:hover{
-    transition: 0.2s;
 }
 
 /*HEADER*/
@@ -65,8 +58,10 @@ button:focus{
     width: 80%;
     float: left;
     text-align: right;
-    height: 50px;
+    height: 40px;
     padding: 5px 0;
+    position: relative;
+    font-size: 0.8em;
 }
 
 .header-desktop .lang-btn{
@@ -78,21 +73,35 @@ button:focus{
     cursor: pointer;
 }
 
+.header-desktop #lang-show{
+    width: 75%;
+    float: left;
+}
+
+#lang-show a{
+    color: white;
+}
+
 .header-desktop nav{
     width: 80%;
     float: left;
 }
 
-.header-desktop .main-nav ul{
+/*.header-desktop .main-nav{
     width: 100%;
     height: 80px;
     padding: 25px 0;
-}
+}*/
 
 .header-desktop nav .main-nav li{
     float: right;
-    padding: 15px 20px;
+    padding: 15px;
     cursor: pointer;
+    border-bottom: 3px solid rgba(0,0,0,0);
+}
+
+.header-desktop nav .main-nav li:first-child{
+    padding-right: 0;
 }
 
 .header-desktop .main-nav #nav-delivery{
@@ -100,14 +109,18 @@ button:focus{
 }
 
 .header-desktop .main-nav li a{
-    color: white;
+    padding: 10px 5px;
+    color: rgba(255,255,255,0.8);
     font-family: 'open_sansregular';
 }
 
-.header-desktop .nav-sel{
-    border-bottom: 3px solid #ACD17A;
+.header-desktop .main-nav li:hover a,
+.header-desktop .main-nav .nav-sel a,
+.header-desktop .main-nav .deliv-sel a{
+    color: white;
 }
 
+.header-desktop .nav-sel,
 .header-desktop .nav-op:hover{
     border-bottom: 3px solid #ACD17A;
 }
@@ -116,8 +129,19 @@ button:focus{
     border: 1px solid #ACD17A;
 }
 
-.header-desktop #nav-delivery:hover{
+.header-desktop #nav-delivery:hover,
+.header-desktop .deliv-sel #nav-delivery{
     background-color: #ACD17A;
+}
+
+.header-desktop .deliv-sel #nav-delivery:hover{
+    background-color: rgba(0,0,0,0);
+    color: white;
+}
+
+.sticky-header .deliv-sel #nav-delivery{
+    background-color: white;
+    color: #ACD17A;
 }
 
 /*sticky header*/
@@ -155,10 +179,64 @@ button:focus{
     color: #ACD17A;
 }
 
+
+/*lang btn*/
+.lang-menu{
+    width: 100px;
+    top: 33px;
+    right: 0;
+    position: absolute;
+    background-color: rgb(165, 188, 83);
+    border: 1px solid white;
+    border-top: 0;
+    text-align: center;
+}
+
+.lang-menu li a{
+    color: white;
+}
+
+.lang-menu li{
+    padding: 5px 0;
+}
+
+.lang-menu li:hover{
+    background-color: white;
+}
+
+.lang-menu li:hover a{
+    color: black;
+}
+
+.header-desktop .lang-sel{
+    background-color: #C2B59B;
+    color: white;
+}
+
+#lang-down{
+    transition: 0.5s;
+    width: 25%;
+    float: left;
+    padding: 3px;
+}
+
+/*lang action*/
+.lang-menu-action {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateX(180deg);
+}
+
+.header-desktop .lang-active{
+    border-bottom: 0;
+}
+
 /*main*/
 .main{
-    height: 700px;
-    padding: 15% 0;
+    height: 650px;
+    padding: 150px 0;
 }
 
 /*main-headers*/
@@ -172,6 +250,38 @@ button:focus{
 
 .mn-menu{
     background: url(../img/header-menu-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+}
+
+.mn-vinos{
+    background: url(../img/header-vinos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+}
+
+.mn-quienes{
+    background: url(../img/header-quienes-somos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+}
+
+.mn-reserva{
+    background: url(../img/header-reserva-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+}
+
+.mn-delivery{
+    background: url(../img/header-delivery.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
@@ -222,6 +332,11 @@ button:focus{
     bottom: 0;
     color: white;
     font-size: 2em;
+}
+
+.main-down a{
+    color: white;
+    font-weight: lighter;
 }
 
 /*content*/
