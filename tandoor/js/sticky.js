@@ -5,6 +5,7 @@ $(document).ready(function(){
     $("#lang-show").html($('.lang-sel').html());
     //sticky header call
     stickyHeader();
+    smoothy();
     //lang-btn animation
     $(".lang-btn").click(function(){
         $(".lang-menu").slideToggle();
@@ -25,7 +26,7 @@ function stickyHeader(){
         var scroll = posActual(); /*posicion actual*/
         if(scroll >= tope){ 
                $('header').addClass('sticky-header');/*añadir clase si sobrepasa */
-               $('#logo-img').attr('src', 'img/logo2-white-color.png');
+               $('#logo-img').attr('src', 'img/logo-sticky.png');
             }
             else {
                 $('header').removeClass('sticky-header');
@@ -35,5 +36,22 @@ function stickyHeader(){
     function posActual  () {
         return window.pageYOffset || document.documentElement.scrollTop;
     };
+};
+
+function smoothy() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
 };
 
