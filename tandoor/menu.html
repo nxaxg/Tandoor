@@ -12,6 +12,7 @@
     <script src="js/jquery-1.11.3.js"></script>
     <!--Script-->
     <script src="js/sticky.js"></script>
+    <script src="js/hidden-fig.js"></script>
     <!--Font awesome-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!--Site font-->
@@ -39,10 +40,10 @@
             </div>
             <nav>
                 <ul class="main-nav">
-                    <li><a href="delivery.html" id="nav-delivery">Delivery</a></li>
+                    <li><a href="delivery.html" id="nav-delivery">Delivery <span class="fa fa-cutlery"></span></a></li>
                     <li class="nav-op"><a href="contacto.html">Contacto</a></li>
                     <li class="nav-op"><a href="reserva.html">Reserva</a></li>
-                    <li class="nav-op"><a href="quienes-somos.html">Quiénes somos</a></li>
+                    <li class="nav-op"><a href="quienes-somos.html">Quiénes Somos</a></li>
                     <li class="nav-op"><a href="vinos.html">Vinos</a></li>
                     <li class="nav-sel"><a href="menu.html">Menú</a></li>
                     <li class="nav-op"><a href="index.html">Home</a></li>
@@ -50,26 +51,136 @@
             </nav>
         </div>
     </header>
-    
+
     <!--main=header-->
     <section class="main mn-menu">
         <div class="container-60">
             <h1 class="main-title">Nuestro Menú</h1>
-            <p class="main-par">Elaboramos todos nuestros platos de forma casera, sin agregados de color ni sabores artificiales. Todas nuestras especias son mezcladas por nosotros mismos.</p>
+            <p class="main-par">En nuestro menú se pueden encontrar platos que no se hallan en ningún otro restaurante de comida de la India, ya que son típicos de la cocina familiar de las diversas comunidades. Creemos que esto nos hace únicos y auténticos, ya que representamos en profundidad lo que todas estas comunidades tienen para ofrecer.</p>
         </div>
         <div class="main-down">
-                <a href="#content">
-                    <span class="fa fa-chevron-down"></span>
-                </a>
+            <a href="#content">
+                <span class="fa fa-chevron-down"></span>
+            </a>
+        </div>
+    </section>
+
+    <section id="content" class="content-1 cont-menu">
+        <div class="menu-categ">
+            <div class="categ-op categ-sel">
+                <p>Entradas</p>
+            </div>
+            <div class="categ-op">
+                <p>Platos principales</p>
+            </div>
+            <div class="categ-op">
+                <p>Especiales</p>
+            </div>
+            <div class="categ-op">
+                <p>Postres</p>
+            </div>
+            <div class="categ-op">
+                <p>Té/Café</p>
+            </div>
+        </div>
+        <div class="container-90">
+            <div class="menu-platos">
+               <!--plato1-->
+                <figure class="plato">
+                    <img src="img/plato-samosa-500.jpg" alt="Samosas">
+                    <figcaption>
+                        <h3 class="plato-title">Samosas</h3>
+                        <p class="plato-des">Fina masa con comino rellenas de papas y verduras con especias indias.</p>
+                        <p class="plato-prec">Valor: $ <span class="precio">164.68</span></p>
+                    </figcaption>
+                </figure>
+                <!--plato2-->
+                <figure class="plato no-mr">
+                    <img src="img/plato-veggie-curry-500.jpg" alt="Curry vegetariano">
+                    <figcaption>
+                        <h3 class="plato-title">Curry vegetariano</h3>
+                        <p class="plato-des">Plato vegetariano a base de verduras, curry y leche de coco.</p>
+                        <p class="plato-prec">Valor: $ <span class="precio">120</span></p>
+                    </figcaption>
+                </figure>
+                <!--plato3-->
+                <figure class="plato">
+                    <img src="img/plato-momos-500.jpg" alt="Momos">
+                    <figcaption>
+                        <h3 class="plato-title">Momos</h3>
+                        <p class="plato-des">Una variante del tradicional dimsum, nativa del nororiente de Nepal, se come con un chutney picante.</p>
+                        <p class="plato-prec">Valor: $ <span class="precio">100</span></p>
+                    </figcaption>
+                </figure>
+                <!--plato4-->
+                <figure class="plato no-mr">
+                    <img src="img/plato-chole-bhature-500.jpg" alt="Chole Bathure">
+                    <figcaption>
+                        <h3 class="plato-title">Chole Bathure</h3>
+                        <p class="plato-des">Plato de garbanzos al curry con especias servido con un pan de harina frita.</p>
+                        <p class="plato-prec">Valor: $ <span class="precio">130.50</span></p>
+                    </figcaption>
+                </figure>
+                
+                <!--hidden platos-->
+                <figure class="plato hidden-fig">
+                    <img src="img/plato-rogan-josh-500.jpg" alt="Rogan Josh">
+                    <figcaption>
+                        <h3 class="plato-title">Rogan Josh</h3>
+                        <p class="plato-des">Una variante del tradicional dimsum, nativa del nororiente de Nepal, se come con un chutney picante.</p>
+                        <p class="plato-prec">Valor: $ <span class="precio">150</span></p>
+                    </figcaption>
+                </figure>
+                <!--plato4-->
+                <figure class="plato no-mr hidden-fig">
+                    <img src="img/plato-tandoori-pollo-500.jpg" alt="Pollo tandoori">
+                    <figcaption>
+                        <h3 class="plato-title">Pollo tandoori</h3>
+                        <p class="plato-des">Plato de garbanzos al curry con especias servido con un pan de harina frita.</p>
+                        <p class="plato-prec">Valor: $ <span class="precio">130.50</span></p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="ver-mas">
+                <button class="ver-mas-btn">
+                    Ver más platos
+                </button>
+            </div>
         </div>
     </section>
     
-    <section id="content" class="content-1 horarios">
+    <section class="subfooter">
+        <div class="container-90">
+            <div class="subfooter-40">
+                <p>¿Te gustaría pertenecer a nuestra red de clientes?</p>
+                <p><strong>Suscribete y obtén descuentos y promociones.</strong></p>
+            </div>
+            <div class="subfooter-40">
+                <input type="text" class="searchtxt" placeholder="Ingresá tu email">
+            </div>
+            <div class="subfooter-20">
+                <button class="suscribirbtn">
+                    Suscribir
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
         <div class="container-60">
-            <h2 class="content-title">Nuestros horarios</h2>
+            <ul class="foot-icons">
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+                <li><a href="#" class="fa fa-youtube"></a></li>
+            </ul>
+            <div class="foot-end">
+                <p class="footer-49">&copy;Copyright 2016 <a href="#" class="foot-a">Tandoor</a></p>
+                <p class="footer-2">|</p>
+                <p class="footer-49">Coded by <span class="fa fa-envira"></span><a href="#" class="foot-a">Cielosordo</a></p>
+            </div>
         </div>
-    </section>
-    
+    </footer>
 
 </body>
 

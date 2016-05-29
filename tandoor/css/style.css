@@ -4,25 +4,28 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'open_sanslight';
     font-size: 1em;
 }
 
 /*webkit searchbox placeholder color*/
 *::-webkit-input-placeholder {
-    color: #6D6E71;
+    color: #c1bb91;
 }*:-moz-placeholder {
     /* FF 4-18 */
-    color: #6D6E71;
+    color: #c1bb91;
 }*::-moz-placeholder {
     /* FF 19+ */
-    color: #6D6E71;
+    color: #c1bb91;
 }*:-ms-input-placeholder {
     /* IE 10+ */
-    color: #6D6E71;
+    color: #c1bb91;
 }
 
 /*GENERAL*/
+
+body{
+    font-family: 'open_sanslight';
+}
 
 a{
     text-decoration: none;
@@ -442,6 +445,238 @@ button:hover{
     margin-right: 4%;
     text-align: center;
 }
+
+/*cont-menu*/
+.cont-menu,
+.cont-vinos{
+    padding: 0 0 40px 0;
+    overflow: hidden;
+    background-color: #E9EDD1;
+}
+
+.cont-menu .menu-categ,
+.cont-vinos .vinos-categ{
+    width: 100%;
+    position: relative;
+    font-family: 'open_sansregular';
+    font-size: 1.1em;
+    overflow: hidden;
+}
+
+.cont-menu .menu-categ .categ-op{
+    width: 20%;
+    float: left;
+    padding: 20px 10px;
+    background-color: rgba(172, 209, 122, 0.5);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    border-right: 1px solid rgb(222, 247, 186);
+    cursor: pointer;
+}
+
+.cont-menu .menu-categ .categ-op:last-child{
+    border-right: 0;
+}
+
+.cont-menu .menu-categ .categ-sel,
+.cont-menu .menu-categ .categ-op:hover{
+    background-color: rgba(172, 209, 122, 1);
+}
+
+#content .menu-platos{
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-platos .plato{
+    width: 49%;
+    float: left;
+    overflow: hidden;
+    margin-right: 2%;
+    margin-bottom: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-platos .plato.no-mr,
+.vinos .vino.no-mr{
+    margin-right: 0;
+}
+
+.menu-platos .plato img,
+.vinos .vino img{
+    width: 100%;
+}
+
+.menu-platos .plato figcaption{
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    color: #231F20;
+}
+
+.plato figcaption .plato-title{
+    font-family: 'open_sansbold';
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.plato figcaption .plato-des,
+.plato figcaption .plato-prec{
+    display: none;
+    width: 60%;
+    margin: 25px 20%;
+}
+
+.plato figcaption .plato-prec{
+    background-color: #ACD17A;
+    color: white;
+    font-family: 'open_sansbold';
+    text-transform: uppercase;
+    padding: 10px 0;
+    width: 40%;
+    clear: both;
+}
+
+.plato figcaption .precio{
+    font-family: 'open_sansextrabold';
+    font-size: 1.4em;
+}
+
+.plato:hover figcaption{
+    height: 100%;
+    transition: 0.5s;
+    bottom: 5px;
+    padding: 10% 0;
+}
+
+.plato:hover figcaption .plato-des,
+.plato:hover figcaption .plato-prec{
+    display: inline-block;
+}
+
+.ver-mas{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.ver-mas .ver-mas-btn{
+    background-color: rgba(0,0,0,0);
+    border: 2px solid #9B8579;
+    color: #9B8579;
+    font-family: 'open_sansbold';
+    font-size: 1.4em;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.ver-mas .ver-mas-btn:hover{
+    background-color: #9B8579;
+    color: #E9EDD1;
+}
+
+.ver-mas .pressed-btn{
+    background-color: #9B8579;
+    color: #E9EDD1;
+    cursor: no-drop;
+}
+
+/*vinos*/
+.cont-vinos .vinos-categ .categ-op{
+    width: 16.6674%;
+    float: left;
+    padding: 20px 10px;
+    background-color: rgba(172, 209, 122, 0.5);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    border-right: 1px solid rgb(222, 247, 186);
+    cursor: pointer;
+}
+
+.cont-vinos .vinos-categ .categ-op:last-child{
+    border-right: 0;
+}
+
+.cont-vinos .vinos-categ .categ-sel,
+.cont-vinos .vinos-categ .categ-op:hover{
+    background-color: rgba(172, 209, 122, 1);
+}
+
+#content .vinos{
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.vinos .vino{
+    width: 24%;
+    float: left;
+    overflow: hidden;
+    margin-right: 1.33%;
+    margin-bottom: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.vinos .vino figcaption{
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    color: #231F20;
+}
+
+.vino figcaption .vino-title{
+    font-family: 'open_sansbold';
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.vino figcaption .vino-vi,
+.vino figcaption .vino-prec{
+    display: none;
+    width: 80%;
+    margin: 25px 10%;
+}
+
+.vino figcaption .vino-prec{
+    background-color: #ACD17A;
+    color: white;
+    font-family: 'open_sansbold';
+    text-transform: uppercase;
+    padding: 10px 0;
+    width: 60%;
+    clear: both;
+}
+
+.vino figcaption .precio{
+    font-family: 'open_sansextrabold';
+    font-size: 1.4em;
+}
+
+.vino:hover figcaption{
+    height: 100%;
+    transition: 0.5s;
+    bottom: 5px;
+    padding: 20% 0;
+}
+
+.vino:hover figcaption .vino-vi,
+.vino:hover figcaption .vino-prec{
+    display: inline-block;
+}
+
 
 /*subfooter*/
 .subfooter{

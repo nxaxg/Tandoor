@@ -18,6 +18,12 @@ $(document).ready(function(){
             $("#lang-show").html(idioma);
         });
     });
+    
+    //categ-menu selection
+    $(".categ-op").click(function(){
+       $(this).siblings().removeClass('categ-sel'); 
+       $(this).addClass('categ-sel'); 
+    });
 });
 
 function stickyHeader(){

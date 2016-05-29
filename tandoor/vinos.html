@@ -12,6 +12,7 @@
     <script src="js/jquery-1.11.3.js"></script>
     <!--Script-->
     <script src="js/sticky.js"></script>
+    <script src="js/hidden-fig.js"></script>
     <!--Font awesome-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!--Site font-->
@@ -39,10 +40,10 @@
             </div>
             <nav>
                 <ul class="main-nav">
-                    <li><a href="delivery.html" id="nav-delivery">Delivery</a></li>
+                    <li><a href="delivery.html" id="nav-delivery">Delivery <span class="fa fa-cutlery"></span></a></li>
                     <li class="nav-op"><a href="contacto.html">Contacto</a></li>
                     <li class="nav-op"><a href="reserva.html">Reserva</a></li>
-                    <li class="nav-op"><a href="quienes-somos.html">Quiénes somos</a></li>
+                    <li class="nav-op"><a href="quienes-somos.html">Quiénes Somos</a></li>
                     <li class="nav-sel"><a href="vinos.html">Vinos</a></li>
                     <li class="nav-op"><a href="menu.html">Menú</a></li>
                     <li class="nav-op"><a href="index.html">Home</a></li>
@@ -55,7 +56,7 @@
     <section class="main mn-vinos">
         <div class="container-60">
             <h1 class="main-title">Nuestra Carta de vinos</h1>
-            <p class="main-par">Elaboramos todos nuestros platos de forma casera, sin agregados de color ni sabores artificiales. Todas nuestras especias son mezcladas por nosotros mismos.</p>
+            <p class="main-par">Nuestra carta de vinos posee una amplia variedad de vinos y licores de todo tipo. Cada uno de estos ha sido escogido como un excelente acompañamiento para nuestra comida y cultura, otorgando de esta manera una experiencia completa hacia nuestros clientes.</p>
         </div>
         <div class="main-down">
                 <a href="#content">
@@ -64,13 +65,142 @@
         </div>
     </section>
     
-    <section id="content" class="content-1 horarios">
-        <div class="container-60">
-            <h2 class="content-title">Nuestros horarios</h2>
+    <section id="content" class="content-1 cont-vinos">
+        <div class="vinos-categ">
+            <div class="categ-op categ-sel">
+                <p>Tintos</p>
+            </div>
+            <div class="categ-op">
+                <p>Blancos</p>
+            </div>
+            <div class="categ-op">
+                <p>Rosados</p>
+            </div>
+            <div class="categ-op">
+                <p>Champagne</p>
+            </div>
+            <div class="categ-op">
+                <p>Cervezas</p>
+            </div>
+            <div class="categ-op">
+                <p>Licores</p>
+            </div>
+        </div>
+        <div class="container-90">
+            <div class="vinos">
+               <!--vino1-->
+                <figure class="vino">
+                    <img src="img/vino-casillero.jpg" alt="Vino Casillero del diablo">
+                    <figcaption>
+                        <h3 class="vino-title">Casillero del diablo</h3>
+                        <p class="vino-vi">Viña Concha y toro</p>
+                        <p class="vino-prec">Valor: $ <span class="precio">200</span></p>
+                    </figcaption>
+                </figure>
+                <!--vino2-->
+                <figure class="vino">
+                    <img src="img/vino-chadwick.jpg" alt="Vino Chadwick">
+                    <figcaption>
+                        <h3 class="vino-title">Chadwick</h3>
+                        <p class="vino-vi">Viña Hernán Chadwick</p>
+                        <p class="vino-prec">Valor: $ <span class="precio">280</span></p>
+                    </figcaption>
+                </figure>
+                <!--vino3-->
+                <figure class="vino">
+                    <img src="img/vino-dirosa.jpg" alt="Vino Di Rosa">
+                    <figcaption>
+                        <h3 class="vino-title">Di Rosa</h3>
+                        <p class="vino-vi">Viña Andrea Pirlo</p>
+                        <p class="vino-prec">Valor: $ <span class="precio">350</span></p>
+                    </figcaption>
+                </figure>
+                <!--vino4-->
+                <figure class="vino no-mr">
+                    <img src="img/vino-garum.jpg" alt="Vino Garum">
+                    <figcaption>
+                        <h3 class="vino-title">Garum</h3>
+                        <p class="vino-vi">Viña Luis Pérez</p>
+                        <p class="vino-prec">Valor: $ <span class="precio">370</span></p>
+                    </figcaption>
+                </figure>
+                <!--vino5-->
+                <figure class="vino">
+                    <img src="img/vino-lahuerta.jpg" alt="Vino La Huerta">
+                    <figcaption>
+                        <h3 class="vino-title">La Huerta</h3>
+                        <p class="vino-vi">Viña Huerta Sur</p>
+                        <p class="vino-prec">Valor: $ <span class="precio">270</span></p>
+                    </figcaption>
+                </figure>
+                <!--vino6-->
+                <figure class="vino">
+                    <img src="img/vino-lalinda.JPG" alt="Vino La Linda">
+                    <figcaption>
+                        <h3 class="vino-title">La Linda</h3>
+                        <p class="vino-vi">Viña Baviera</p>
+                        <p class="vino-prec">Valor: $ <span class="precio">320</span></p>
+                    </figcaption>
+                </figure>
+                <!--vino7-->
+                <figure class="vino hidden">
+                    <img src="img/vino-masseto.jpg" alt="Vino Masetto">
+                    <figcaption>
+                        <h3 class="vino-title">Masetto</h3>
+                        <p class="vino-vi">Endrizzi</p>
+                        <p class="vino-prec">Valor: $ <span class="precio">700</span></p>
+                    </figcaption>
+                </figure>
+                <!--vino7-->
+                <figure class="vino no-mr">
+                    <img src="img/vino-rosetta.jpg" alt="Vino Rosetta">
+                    <figcaption>
+                        <h3 class="vino-title">Rosetta</h3>
+                        <p class="vino-vi">Culto a la Luna</p>
+                        <p class="vino-prec">Valor: $ <span class="precio">400</span></p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="ver-mas">
+                <button class="ver-mas-btn">
+                    Ver más vinos
+                </button>
+            </div>
         </div>
     </section>
     
-
+     <section class="subfooter">
+        <div class="container-90">
+            <div class="subfooter-40">
+                <p>¿Te gustaría pertenecer a nuestra red de clientes?</p>
+                <p><strong>Suscribete y obtén descuentos y promociones.</strong></p>
+            </div>
+            <div class="subfooter-40">
+                <input type="text" class="searchtxt" placeholder="Ingresá tu email">
+            </div>
+            <div class="subfooter-20">
+                <button class="suscribirbtn">
+                    Suscribir
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container-60">
+            <ul class="foot-icons">
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+                <li><a href="#" class="fa fa-youtube"></a></li>
+            </ul>
+            <div class="foot-end">
+                <p class="footer-49">&copy;Copyright 2016 <a href="#" class="foot-a">Tandoor</a></p>
+                <p class="footer-2">|</p>
+                <p class="footer-49">Coded by <span class="fa fa-envira"></span><a href="#" class="foot-a">Cielosordo</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
