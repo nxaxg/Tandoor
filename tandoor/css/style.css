@@ -501,12 +501,15 @@ button:hover{
 }
 
 .menu-platos .plato.no-mr,
-.vinos .vino.no-mr{
+.vinos .vino.no-mr,
+.equipo .miembro.no-mr,
+.equipo .miembro-rs .no-mr{
     margin-right: 0;
 }
 
 .menu-platos .plato img,
-.vinos .vino img{
+.vinos .vino img,
+.equipo .miembro img{
     width: 100%;
 }
 
@@ -611,13 +614,15 @@ button:hover{
     background-color: rgba(172, 209, 122, 1);
 }
 
-#content .vinos{
+#content .vinos,
+.contenido .equipo{
     padding: 40px 0;
     position: relative;
     overflow: hidden;
 }
 
-.vinos .vino{
+.vinos .vino,
+.equipo .miembro{
     width: 24%;
     float: left;
     overflow: hidden;
@@ -627,7 +632,8 @@ button:hover{
     cursor: pointer;
 }
 
-.vinos .vino figcaption{
+.vinos .vino figcaption,
+.equipo .miembro figcaption{
     position: absolute;
     width: 100%;
     bottom: 20px;
@@ -636,7 +642,8 @@ button:hover{
     color: #231F20;
 }
 
-.vino figcaption .vino-title{
+.vino figcaption .vino-title,
+.miembro figcaption .miembro-title{
     font-family: 'open_sansbold';
     font-size: 1.2em;
     text-transform: uppercase;
@@ -644,7 +651,9 @@ button:hover{
 }
 
 .vino figcaption .vino-vi,
-.vino figcaption .vino-prec{
+.vino figcaption .vino-prec,
+.miembro figcaption .miembro-puesto,
+.miembro figcaption .miembro-rs{
     display: none;
     width: 80%;
     margin: 25px 10%;
@@ -665,7 +674,8 @@ button:hover{
     font-size: 1.4em;
 }
 
-.vino:hover figcaption{
+.vino:hover figcaption,
+.miembro:hover figcaption{
     height: 100%;
     transition: 0.5s;
     bottom: 5px;
@@ -673,9 +683,47 @@ button:hover{
 }
 
 .vino:hover figcaption .vino-vi,
-.vino:hover figcaption .vino-prec{
+.vino:hover figcaption .vino-prec,
+.miembro:hover figcaption .miembro-puesto,
+.miembro:hover figcaption .miembro-rs{
     display: inline-block;
 }
+
+/*quienes somos*/
+.id-cultural{
+    line-height: 1.5em;
+    padding: 20px 0;
+    margin: 10px 0;
+    border-top: 1px solid rgba(35, 31, 32, 0.5);
+    border-bottom: 1px solid rgba(35, 31, 32, 0.5);
+}
+
+.contenido .equipo{
+    padding: 40px 0 10px 0;
+}
+
+.miembro figcaption .miembro-rs{
+    width: 40%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.miembro .miembro-rs span{
+    font-size: 1.5em;
+    width: 46%;
+    margin-right: 8%;
+    float: left;
+    padding: 10% 0;
+    background-color: #ACD17A;
+    border: 1px solid #ACD17A;
+    color: white;
+}
+
+.miembro .miembro-rs span:hover{
+    background-color: #9B8579;
+    border: 1px solid #9B8579;
+}
+
 
 
 /*subfooter*/
@@ -722,7 +770,7 @@ button:hover{
     font-family: 'open_sansbold';
     font-size: 1.1em;
     text-transform: uppercase;
-    padding: 1.4% 5px;
+    padding: 2px 5px;
     cursor: pointer;
 }
 
