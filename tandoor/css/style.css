@@ -418,6 +418,7 @@ button:hover{
 
 .contenido .g-mapa{
     width: 100%;
+    margin: 20px 0;
     height: 400px;
     background-color: black;
 }
@@ -428,7 +429,10 @@ button:hover{
     padding: 15px 20px;
     overflow: hidden;
     width: 60%;
-    
+}
+
+.contenido .dir-2{
+    background-color: #C2B59B;
 }
 
 .contenido .direccion-2{
@@ -563,14 +567,16 @@ button:hover{
     display: inline-block;
 }
 
-.ver-mas{
+.ver-mas,
+.btn-container{
     position: relative;
     width: 100%;
     text-align: center;
     padding: 15px 0;
 }
 
-.ver-mas .ver-mas-btn{
+.ver-mas .ver-mas-btn,
+.btn-container .accion-btn{
     background-color: rgba(0,0,0,0);
     border: 2px solid #9B8579;
     color: #9B8579;
@@ -581,7 +587,8 @@ button:hover{
     cursor: pointer;
 }
 
-.ver-mas .ver-mas-btn:hover{
+.ver-mas .ver-mas-btn:hover,
+.btn-container .accion-btn:hover{
     background-color: #9B8579;
     color: #E9EDD1;
 }
@@ -777,6 +784,61 @@ button:hover{
 .subfooter-20 .suscribirbtn:hover{
     background-color: rgba(0,0,0,0);
     color: #9B8579;
+}
+
+/*reserva*/
+.reserva-form{
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.reserva-form .input-container{
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+    background-color: white;
+    border: 1px solid #C2B59B;
+    padding: 5px 0;
+}
+
+.input-container .input-icon{
+    color: gray;
+    width: 10%;
+    float: left;
+    text-align: center;
+    padding: 2px 0;
+}
+
+.input-container .input-box{
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    width: 90%;
+    float: left;
+    padding: 2px 0;
+}
+
+.input-box:focus{
+    outline: 0;
+}
+
+.input-container.no-rm{
+    margin-right: 0;
+    clear: right;
+}
+
+hr.form-divider{
+    position: relative;
+    margin: 50px 0 20px 0;
+    width: 100%;
+    border: 1px solid rgba(194, 181, 155, 0.5);
+}
+
+.input-container select{
+    color: #c1bb91;
+}
+
+.input-container option{
+    color: black;
 }
 
 /*footer*/

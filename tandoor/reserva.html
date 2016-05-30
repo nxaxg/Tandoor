@@ -55,7 +55,7 @@
     <section class="main mn-reserva">
         <div class="container-60">
             <h1 class="main-title">Reserva tu mesa</h1>
-            <p class="main-par">Elaboramos todos nuestros platos de forma casera, sin agregados de color ni sabores artificiales. Todas nuestras especias son mezcladas por nosotros mismos.</p>
+            <p class="main-par">Realiza tu reserva de mesa, invita a tus amigos o seres queridos y ven a comer junto a nosotros.</p>
         </div>
         <div class="main-down">
                 <a href="#content">
@@ -64,12 +64,132 @@
         </div>
     </section>
     
-    <section id="content" class="content-1 horarios">
+    <section id="content" class="content-1 contenido">
         <div class="container-60">
-            <h2 class="content-title">Nuestros horarios</h2>
+            <h2 class="content-title">Nuestra dirección</h2>
+            <div id="g-mapa-home" class="g-mapa">
+                <script>
+                    function initMap() {
+                        var mapDiv = document.getElementById('g-mapa-home');
+                        var coord = new google.maps.LatLng(-34.593732,-58.407210);
+                        var marker=new google.maps.Marker({
+                          position:coord,
+                          });
+                        var map = new google.maps.Map(mapDiv, {
+                          center: coord,
+                          zoom: 16
+                        });
+                        marker.setMap(map);
+                      } 
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+            </div>
+            <div class="direccion dir-2">
+                <span class="fa fa-map-marker direccion-2"></span>
+                <p class="direccion-92">Laprida 1293 (esq. Charcas). Barrio Norte, Buenos Aires.</p>
+            </div>
         </div>
     </section>
     
+    <section class="content-2 contenido">
+       <div class="container-60">
+           <h2 class="content-title">Realiza tu reserva de mesa</h2>
+           <div class="reserva-form">
+               <!--inputcont1-->
+               <div class="input-container">
+                  <span class="fa fa-envelope-o input-icon"></span>
+                   <input type="email" name="email" placeholder="E-Mail" class="input-box">
+               </div>
+               <!--inputcont2-->
+               <div class="input-container">
+                  <span class="fa fa-user input-icon"></span>
+                   <input type="text" name="nombre" placeholder="Nombre" class="input-box">
+               </div>
+               <!--inputcont3-->
+               <div class="input-container no-rm">
+                  <span class="fa fa-phone input-icon"></span>
+                   <input type="tel" name="phone" placeholder="Teléfono" class="input-box">
+               </div>
+               <hr class="form-divider">
+               <!--inputcont4-->
+               <div class="input-container">
+                  <span class="fa fa-calendar-o input-icon"></span>
+                   <input placeholder="Fecha" class="input-box" type="text" onfocus="(this.type='date')">
+               </div>
+               <!--inputcont5-->
+               <div class="input-container">
+                  <span class="fa fa-user input-icon"></span>
+                   <select name="hora" class="input-box">
+                       <option disabled selected>Hora</option>
+                       <option>13:00hrs</option>
+                       <option>13:30hrs</option><option>14:00hrs</option>
+                       <option>14:30hrs</option><option>15:00hrs</option>
+                       <option>15:30hrs</option><option>16:00hrs</option>
+                       <option>16:30hrs</option><option>17:00hrs</option>
+                       <option>17:30hrs</option><option>18:00hrs</option>
+                       <option>18:30hrs</option><option>19:00hrs</option>
+                       <option>19:30hrs</option><option>20:00hrs</option>
+                       <option>20:30hrs</option><option>21:00hrs</option>
+                   </select>
+               </div>
+               <!--inputcont6-->
+               <div class="input-container no-rm">
+                  <span class="fa fa-users input-icon"></span>
+                   <select name="personas" class="input-box">
+                       <option disabled selected>Cantidad de personas</option>
+                       <option>1 persona</option>
+                       <option>2 personas</option>
+                       <option>3 personas</option>
+                       <option>4 personas</option>
+                       <option>5 personas</option>
+                       <option>6 personas</option>
+                       <option>7 personas</option>
+                       <option>8 personas</option>
+                       <option>9 personas</option>
+                       <option>10 personas</option>
+                   </select>
+               </div>
+           </div>
+           <div class="btn-container">
+               <button class="accion-btn">
+                   Realizar Reserva
+               </button>
+           </div>
+       </div>
+    </section>
+    
+    <section class="subfooter">
+        <div class="container-90">
+            <div class="subfooter-40">
+                <p>¿Te gustaría pertenecer a nuestra red de clientes?</p>
+                <p><strong>Suscribete y obtén descuentos y promociones.</strong></p>
+            </div>
+            <div class="subfooter-40">
+                <input type="text" class="searchtxt" placeholder="Ingresá tu email">
+            </div>
+            <div class="subfooter-20">
+                <button class="suscribirbtn">
+                    Suscribir
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container-60">
+            <ul class="foot-icons">
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+                <li><a href="#" class="fa fa-youtube"></a></li>
+            </ul>
+            <div class="foot-end">
+                <p class="footer-49">&copy;Copyright 2016 <a href="#" class="foot-a">Tandoor</a></p>
+                <p class="footer-2">|</p>
+                <p class="footer-49">Coded by <span class="fa fa-envira"></span><a href="#" class="foot-a">Cielosordo</a></p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
