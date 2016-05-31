@@ -12,6 +12,7 @@
     <script src="js/jquery-1.11.3.js"></script>
     <!--Script-->
     <script src="js/sticky.js"></script>
+    <script src="js/hidden-fig.js"></script>
     <!--Font awesome-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!--Site font-->
@@ -55,7 +56,7 @@
     <section class="main mn-delivery">
         <div class="container-60">
             <h1 class="main-title">Realiza tu pedido</h1>
-            <p class="main-par">Elaboramos todos nuestros platos de forma casera, sin agregados de color ni sabores artificiales. Todas nuestras especias son mezcladas por nosotros mismos.</p>
+            <p class="main-par">¿Cena en casa? <br>Realiza tu pedido a domicilio y disfruta de nuestra carta de menú y carta de vinos desde la comodidad de tu hogar.</p>
         </div>
         <div class="main-down">
                 <a href="#content">
@@ -64,12 +65,358 @@
         </div>
     </section>
     
-    <section id="content" class="content-1 horarios">
+    <section id="content" class="content-1 contenido">
         <div class="container-60">
-            <h2 class="content-title">Nuestros horarios</h2>
+            <h2 class="content-title">Nuestros horarios de delivery</h2>
+            <div class="horario-table">
+                <p class="horario-48">Lunes a Viernes</p>
+                <span class="fa fa-clock-o horario-4"></span>
+                <p class="horario-48">12:00Hrs - 20:00hrs</p>
+            </div>
+            <div class="horario-table">
+                <p class="horario-48">Sábados y Domingos</p>
+                <span class="fa fa-clock-o horario-4"></span>
+                <p class="horario-48">13:00Hrs - 22:00hrs</p>
+            </div>
+            <div class="horario-table">
+                <p class="horario-48">Festivos</p>
+                <span class="fa fa-close horario-4"></span>
+                <p class="horario-48">Cerrado</p>
+            </div>
+            <p class="par-delivery"><strong>¡No te preocupes!</strong><br>Llegamos a todos los ricones del gran buenos aires.</p>
         </div>
     </section>
     
+    <section class="content-2 contenido">
+        <div class="container-60">
+            <h2 class="content-title">Realiza tu reserva de mesa</h2>
+           <div class="form">
+               <!--inputcont1-->
+               <div class="input-container">
+                  <span class="fa fa-envelope-o input-icon"></span>
+                   <input type="email" name="email" placeholder="E-Mail" class="input-box">
+               </div>
+               <!--inputcont2-->
+               <div class="input-container">
+                  <span class="fa fa-user input-icon"></span>
+                   <input type="text" name="nombre" placeholder="Nombre" class="input-box">
+               </div>
+               <!--inputcont3-->
+               <div class="input-container no-rm">
+                  <span class="fa fa-phone input-icon"></span>
+                   <input type="tel" name="phone" placeholder="Teléfono" class="input-box">
+               </div>
+            </div>
+            
+            <!--para comer-->
+            <h3 class="delivery-subtitle">Para comer</h3>
+            <div class="delivery-form">
+              <div class="mas-comida-btn">
+                  <span class="fa fa-plus"></span>
+              </div>
+               <!--inputcont4-->
+               <div class="input-container">
+                   <select name="categoría" class="input-box">
+                       <option disabled selected>Categoría plato</option>
+                       <option>Entrada</option>
+                       <option>Plato principal</option>
+                       <option>Especial</option>
+                       <option>Postres</option>
+                   </select>
+               </div>
+               <!--inputcont5-->
+               <div class="input-container">
+                   <select name="plato" class="input-box">
+                       <option disabled selected>Plato</option>
+                       <option>Plato 1</option>
+                       <option>Plato 2</option>
+                       <option>Plato 3</option>
+                       <option>Plato 4</option>
+                       <option>Plato 5</option>
+                       <option>Plato 6</option>
+                   </select>
+               </div>
+               <!--inputcont6-->
+               <div class="input-container no-rm">
+                   <select name="cantidad" class="input-box">
+                       <option disabled selected>Porciones</option>
+                       <option>1 porción</option>
+                       <option>2 porciones</option>
+                       <option>3 porciones</option>
+                       <option>4 porciones</option>
+                       <option>5 porciones</option>
+                       <option>6 porciones</option>
+                       <option>7 porciones</option>
+                       <option>8 porciones</option>
+                       <option>9 porciones</option>
+                       <option>10 porciones</option>
+                   </select>
+               </div>
+               
+               <!--hidden1input1-->
+               <div class="mas-comida-btn hidden-comida">
+                  <span class="fa fa-plus"></span>
+              </div>
+               <div class="hidden-comida input-container">
+                   <select name="categoría" class="input-box">
+                       <option disabled selected>Categoría plato</option>
+                       <option>Entrada</option>
+                       <option>Plato principal</option>
+                       <option>Especial</option>
+                       <option>Postres</option>
+                   </select>
+               </div>
+               <!--hiddeninput2-->
+               <div class="hidden-comida input-container">
+                   <select name="plato" class="input-box">
+                       <option disabled selected>Plato</option>
+                       <option>Plato 1</option>
+                       <option>Plato 2</option>
+                       <option>Plato 3</option>
+                       <option>Plato 4</option>
+                       <option>Plato 5</option>
+                       <option>Plato 6</option>
+                   </select>
+               </div>
+               <!--inputcont3-->
+               <div class="hidden-comida input-container no-rm">
+                   <select name="cantidad" class="input-box">
+                       <option disabled selected>Porciones</option>
+                       <option>1 porción</option>
+                       <option>2 porciones</option>
+                       <option>3 porciones</option>
+                       <option>4 porciones</option>
+                       <option>5 porciones</option>
+                       <option>6 porciones</option>
+                       <option>7 porciones</option>
+                       <option>8 porciones</option>
+                       <option>9 porciones</option>
+                       <option>10 porciones</option>
+                   </select>
+               </div>
+               
+               <!--hidden2input1-->
+               <div class="mas-comida-btn hidden-comida">
+                  <span class="fa fa-plus"></span>
+              </div>
+               <div class="hidden-comida input-container">
+                   <select name="categoría" class="input-box">
+                       <option disabled selected>Categoría plato</option>
+                       <option>Entrada</option>
+                       <option>Plato principal</option>
+                       <option>Especial</option>
+                       <option>Postres</option>
+                   </select>
+               </div>
+               <!--hiddeninput2-->
+               <div class="hidden-comida input-container">
+                   <select name="plato" class="input-box">
+                       <option disabled selected>Plato</option>
+                       <option>Plato 1</option>
+                       <option>Plato 2</option>
+                       <option>Plato 3</option>
+                       <option>Plato 4</option>
+                       <option>Plato 5</option>
+                       <option>Plato 6</option>
+                   </select>
+               </div>
+               <!--inputcont3-->
+               <div class="hidden-comida input-container no-rm">
+                   <select name="cantidad" class="input-box">
+                       <option disabled selected>Porciones</option>
+                       <option>1 porción</option>
+                       <option>2 porciones</option>
+                       <option>3 porciones</option>
+                       <option>4 porciones</option>
+                       <option>5 porciones</option>
+                       <option>6 porciones</option>
+                       <option>7 porciones</option>
+                       <option>8 porciones</option>
+                       <option>9 porciones</option>
+                       <option>10 porciones</option>
+                   </select>
+               </div>
+           </div>
+           
+           <!--para beber-->
+           <h3 class="delivery-subtitle">Para beber (opcional)</h3>
+            <div class="delivery-form">
+              <div class="mas-bebida-btn">
+                  <span class="fa fa-plus"></span>
+              </div>
+               <!--inputcont4-->
+               <div class="input-container">
+                   <select name="categoría" class="input-box">
+                       <option disabled selected>Categoría bebida</option>
+                       <option>Tintos</option>
+                       <option>Blancos</option>
+                       <option>Champagne</option>
+                       <option>Cervezas</option>
+                       <option>Bebidas</option>
+                   </select>
+               </div>
+               <!--inputcont5-->
+               <div class="input-container">
+                   <select name="bebida" class="input-box">
+                       <option disabled selected>Bebida</option>
+                       <option>Bebida 1</option>
+                       <option>Bebida 2</option>
+                       <option>Bebida 3</option>
+                       <option>Bebida 4</option>
+                       <option>Bebida 5</option>
+                       <option>Bebida 6</option>
+                   </select>
+               </div>
+               <!--inputcont6-->
+               <div class="input-container no-rm">
+                   <select name="cantidad" class="input-box">
+                       <option disabled selected>Cantidad</option>
+                       <option>1 bebida</option>
+                       <option>2 bebidas</option>
+                       <option>3 bebidas</option>
+                       <option>4 bebidas</option>
+                       <option>5 bebidas</option>
+                       <option>6 bebidas</option>
+                       <option>7 bebidas</option>
+                       <option>8 bebidas</option>
+                       <option>9 bebidas</option>
+                       <option>10 bebidas</option>
+                   </select>
+               </div>
+               
+               <!--hiddeninput1-->
+               <div class="mas-bebida-btn hidden-bebida">
+                  <span class="fa fa-plus"></span>
+              </div>
+               <div class="hidden-bebida input-container">
+                   <select name="categoría" class="input-box">
+                       <option disabled selected>Categoría bebida</option>
+                       <option>Tintos</option>
+                       <option>Blancos</option>
+                       <option>Champagne</option>
+                       <option>Cervezas</option>
+                       <option>Bebidas</option>
+                   </select>
+               </div>
+               <!--hiddeninput2-->
+               <div class="hidden-bebida input-container">
+                   <select name="bebida" class="input-box">
+                       <option disabled selected>Bebida</option>
+                       <option>Bebida 1</option>
+                       <option>Bebida 2</option>
+                       <option>Bebida 3</option>
+                       <option>Bebida 4</option>
+                       <option>Bebida 5</option>
+                       <option>Bebida 6</option>
+                   </select>
+               </div>
+               <!--inputcont3-->
+               <div class="hidden-bebida input-container no-rm">
+                   <select name="cantidad" class="input-box">
+                       <option disabled selected>Cantidad</option>
+                       <option>1 bebida</option>
+                       <option>2 bebidas</option>
+                       <option>3 bebidas</option>
+                       <option>4 bebidas</option>
+                       <option>5 bebidas</option>
+                       <option>6 bebidas</option>
+                       <option>7 bebidas</option>
+                       <option>8 bebidas</option>
+                       <option>9 bebidas</option>
+                       <option>10 bebidas</option>
+                   </select>
+               </div>
+               
+               <!--hiddeninput1-->
+               <div class="mas-bebida-btn hidden-bebida">
+                  <span class="fa fa-plus"></span>
+              </div>
+               <div class="hidden-bebida input-container">
+                   <select name="categoría" class="input-box">
+                       <option disabled selected>Categoría bebida</option>
+                       <option>Tintos</option>
+                       <option>Blancos</option>
+                       <option>Champagne</option>
+                       <option>Cervezas</option>
+                       <option>Bebidas</option>
+                   </select>
+               </div>
+               <!--hiddeninput2-->
+               <div class="hidden-bebida input-container">
+                   <select name="bebida" class="input-box">
+                       <option disabled selected>Bebida</option>
+                       <option>Bebida 1</option>
+                       <option>Bebida 2</option>
+                       <option>Bebida 3</option>
+                       <option>Bebida 4</option>
+                       <option>Bebida 5</option>
+                       <option>Bebida 6</option>
+                   </select>
+               </div>
+               <!--inputcont3-->
+               <div class="hidden-bebida input-container no-rm">
+                   <select name="cantidad" class="input-box">
+                       <option disabled selected>Cantidad</option>
+                       <option>1 bebida</option>
+                       <option>2 bebidas</option>
+                       <option>3 bebidas</option>
+                       <option>4 bebidas</option>
+                       <option>5 bebidas</option>
+                       <option>6 bebidas</option>
+                       <option>7 bebidas</option>
+                       <option>8 bebidas</option>
+                       <option>9 bebidas</option>
+                       <option>10 bebidas</option>
+                   </select>
+               </div>
+                              
+           </div>
+           
+           <!--especificaciones-->
+           <div class="delivery-form">
+               <textarea name="especificaciones" placeholder="Especificaciones" rows="5" class="textarea"></textarea>
+           </div>
+           
+           <div class="btn-container">
+               <button class="accion-btn">
+                   Realizar Pedido
+               </button>
+           </div>
+        </div>
+    </section>
+    
+    <section class="subfooter">
+        <div class="container-90">
+            <div class="subfooter-40">
+                <p>¿Te gustaría pertenecer a nuestra red de clientes?</p>
+                <p><strong>Suscribete y obtén descuentos y promociones.</strong></p>
+            </div>
+            <div class="subfooter-40">
+                <input type="text" class="searchtxt" placeholder="Ingresá tu email">
+            </div>
+            <div class="subfooter-20">
+                <button class="suscribirbtn">
+                    Suscribir
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container-60">
+            <ul class="foot-icons">
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+                <li><a href="#" class="fa fa-youtube"></a></li>
+            </ul>
+            <div class="foot-end">
+                <p class="footer-49">&copy;Copyright 2016 <a href="#" class="foot-a">Tandoor</a></p>
+                <p class="footer-2">|</p>
+                <p class="footer-49">Coded by <span class="fa fa-envira"></span><a href="#" class="foot-a">Cielosordo</a></p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

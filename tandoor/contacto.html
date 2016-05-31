@@ -12,6 +12,7 @@
     <script src="js/jquery-1.11.3.js"></script>
     <!--Script-->
     <script src="js/sticky.js"></script>
+    <script src="js/smoothy.js"></script>
     <!--Font awesome-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!--Site font-->
@@ -19,11 +20,11 @@
 </head>
 
 <body>
-    <header class="header-desktop hdr-dsktp-uno">
+    <header class="header-desktop">
         <div class="container-90">
             <figure id="logo">
                 <a href="index.html">
-                    <img id="logo-img" src="img/logo2-white.png" alt="Logo Tandoor blanco">
+                    <img id="logo-img" src="img/logo-sticky.png" alt="Logo Tandoor blanco">
                 </a>
             </figure>
             <div class="lang">
@@ -52,10 +53,20 @@
     </header>
     
     <!--main=header-->
-    <section class="main mn-quienes">
+    <section class="contact main mn-contacto">
         <div class="container-60">
             <h1 class="main-title">Contacto</h1>
-            <p class="main-par">Elaboramos todos nuestros platos de forma casera, sin agregados de color ni sabores artificiales. Todas nuestras especias son mezcladas por nosotros mismos.</p>
+            <div class="contacto-form form">
+                <input type="text" placeholder="Nombre" class="input-48">
+                <input type="email" placeholder="E-mail" class="input-48 no-mr">
+                <input type="text" placeholder="Asunto" class="input-100">
+                <textarea rows="5" class="textarea" placeholder="Mensaje"></textarea>
+                <div class="btn-container">
+                    <button class="accion-btn">
+                        Enviar
+                    </button>
+                </div>
+            </div>
         </div>
         <div class="main-down">
                 <a href="#content">
@@ -64,11 +75,87 @@
         </div>
     </section>
     
-    <section id="content" class="content-1 horarios">
+    
+    <section id="content" class="content-1 contenido">
         <div class="container-60">
             <h2 class="content-title">Nuestros horarios</h2>
+            <div class="horario-table">
+                <p class="horario-48">Lunes a Viernes</p>
+                <span class="fa fa-clock-o horario-4"></span>
+                <p class="horario-48">12:00Hrs - 22:00hrs</p>
+            </div>
+            <div class="horario-table">
+                <p class="horario-48">Sábados y Domingos</p>
+                <span class="fa fa-clock-o horario-4"></span>
+                <p class="horario-48">13:00Hrs - 00:00hrs</p>
+            </div>
+            <div class="horario-table">
+                <p class="horario-48">Festivos</p>
+                <span class="fa fa-close horario-4"></span>
+                <p class="horario-48">Cerrado</p>
+            </div>
         </div>
     </section>
+    
+    <section class="content-2 contenido">
+        <div class="container-60">
+            <h2 class="content-title">Nuestra dirección</h2>
+            <div id="g-mapa-home" class="g-mapa">
+                <script>
+                    function initMap() {
+                        var mapDiv = document.getElementById('g-mapa-home');
+                        var coord = new google.maps.LatLng(-34.593732,-58.407210);
+                        var marker=new google.maps.Marker({
+                          position:coord,
+                          });
+                        var map = new google.maps.Map(mapDiv, {
+                          center: coord,
+                          zoom: 16
+                        });
+                        marker.setMap(map);
+                      } 
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+            </div>
+            <div class="direccion">
+                <span class="fa fa-map-marker direccion-2"></span>
+                <p class="direccion-92">Laprida 1293 (esq. Charcas). Barrio Norte, Buenos Aires.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="subfooter">
+        <div class="container-90">
+            <div class="subfooter-40">
+                <p>¿Te gustaría pertenecer a nuestra red de clientes?</p>
+                <p><strong>Suscribete y obtén descuentos y promociones.</strong></p>
+            </div>
+            <div class="subfooter-40">
+                <input type="text" class="searchtxt" placeholder="Ingresá tu email">
+            </div>
+            <div class="subfooter-20">
+                <button class="suscribirbtn">
+                    Suscribir
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container-60">
+            <ul class="foot-icons">
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+                <li><a href="#" class="fa fa-youtube"></a></li>
+            </ul>
+            <div class="foot-end">
+                <p class="footer-49">&copy;Copyright 2016 <a href="#" class="foot-a">Tandoor</a></p>
+                <p class="footer-2">|</p>
+                <p class="footer-49">Coded by <span class="fa fa-envira"></span><a href="#" class="foot-a">Cielosordo</a></p>
+            </div>
+        </div>
+    </footer>
     
 
 </body>

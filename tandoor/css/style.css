@@ -309,6 +309,14 @@ button:hover{
     position: relative;
 }
 
+.mn-contacto{
+    background: url(../img/header-contacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    position: relative;
+}
+
 .main::before {
     content: '';
     position: absolute;
@@ -787,12 +795,12 @@ button:hover{
 }
 
 /*reserva*/
-.reserva-form{
+.form{
     overflow: hidden;
     padding: 20px 0;
 }
 
-.reserva-form .input-container{
+.form .input-container{
     width: 32%;
     float: left;
     margin-right: 2%;
@@ -839,6 +847,128 @@ hr.form-divider{
 
 .input-container option{
     color: black;
+}
+
+/*delivery*/
+.par-delivery{
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.delivery-subtitle{
+    font-family: 'open_sansbold';
+    font-size: 1.2em;
+    margin: 5px 0 2px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(194, 181, 155, 0.5);
+}
+
+.delivery-form{
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.delivery-form .mas-comida-btn,
+.delivery-form .mas-bebida-btn{
+    width: 4.8%;
+    float: left;
+    margin-right: 1.2%;
+    text-align: center;
+    font-size: 1.4em;
+    padding: 4px 0;
+    border-radius: 100%;
+    background-color: #9B8579;
+    color: #E9EDD1;
+    border: 1px solid #9B8579;
+    cursor: pointer;
+}
+
+.delivery-form .mas-bebida-btn:hover,
+.delivery-form .mas-comida-btn:hover{
+    background-color: #E9EDD1;
+    color: #9B8579;
+}
+
+.delivery-form .input-container{
+    width: 30%;
+    float: left;
+    margin-right: 2%;
+    background-color: white;
+    border: 1px solid #C2B59B;
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+
+.delivery-form .input-container.no-rm{
+    margin-right: 0;
+}
+
+.delivery-form .input-box{
+    width: 100%;
+    cursor: pointer;
+}
+
+.textarea{
+    width: 100%;
+    resize: none;
+    font-family: 'open_sansregular';
+    padding: 5px;
+    border: 1px solid #C2B59B;
+}
+
+.textarea:focus{
+    outline: 2px solid #C2B59B;
+}
+
+/*contacto*/
+
+.contact{
+    color: black;
+    background-color: rgba(194, 181, 155, 0.6);
+    padding: 80px 0 40px 0;
+}
+
+.contact .main-title{
+    color: #E9EDD1;
+}
+
+.contacto-form{
+    background-color: rgba(233, 237, 209, 0.8);
+    padding: 4% 4% 2% 4%;
+}
+
+.contacto-form input{
+    background-color: white;
+    border: 1px solid #C2B59B;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.contacto-form .input-48{
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+
+.contacto-form .input-100{
+    width: 100%;
+}
+
+.contacto-form input:focus{
+    outline: 2px solid #C2B59B; 
+}
+
+.contacto-form .no-mr{
+    margin-right: 0;
+}
+
+.contacto-form .accion-btn{
+    width: 30%;
+}
+
+.contact .main-down a{
+    color: #C2B59B;
 }
 
 /*footer*/
