@@ -21,6 +21,15 @@
     color: #c1bb91;
 }
 
+/**/
+header.header-mobile{
+    display: none;
+}
+
+.menu-categ-mob{
+    display: none;
+}
+
 /*GENERAL*/
 
 body{

@@ -1,0 +1,312 @@
+@media only screen and (max-width:500px){
+    header.header-desktop{
+        display: none;
+    }
+    
+    .container-90{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    header.header-mobile{
+        display: inline-block;
+        background-color: rgba(0,0,0,0);
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        height: auto;
+        overflow: visible;
+        color: white;
+        transition: 0.5s;
+        padding: 2%;
+    }
+    
+    header.header-mobile-sticky{
+        background-color: rgb(165, 188, 83);
+        padding: 0;
+    }
+    
+    .header-mobile .headermob-lang,
+    .header-mobile .headermob-nav{
+        font-size: 2.5em;
+        transition: 0.5s;
+        width: 10%;
+        float: left;
+        text-align: center;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+    
+    .header-mobile .headermob-logo{
+        width: 80%;
+        float: left;
+    }
+    
+    .header-mobile .headermob-logo img{
+        width: 50%;
+        margin: 0 25%;
+    }
+        
+    header .moblang-menu,
+    header .mobnav-menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 700px;
+        margin: 0 auto;
+        z-index: 10;
+        text-align: center;
+        background-color: rgba(165, 188, 83, 0.9);
+        border-top: 1px solid rgba(255,255,255,0.2);
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    
+    .header-mobile .moblang-menu li,
+    .header-mobile .mobnav-menu li{
+        padding: 20px 0;
+    }
+    
+    .header-mobile .moblang-menu a,
+    .header-mobile .mobnav-menu a{
+        color: white;
+        padding: 5px 10px;
+        border: 1px solid rgba(0,0,0,0);
+        font-family: 'open_sansregular';
+        font-size: 1.4em;
+    }
+    
+    .header-mobile .moblang-menu a:hover,
+    .header-mobile .mobnav-menu a:hover,
+    .header-mobile .moblang-menu .lang-sel,
+    .header-mobile .mobnav-menu .nav-sel{
+        background-color: white;
+        color: rgb(165, 188, 83);
+        border: 1px solid white;
+    }
+    .header-mobile .mobnav-menu .del{
+        border: 1px solid white;
+    }
+    
+    .header-mobile .mob-active{
+        color: rgba(165, 188, 83, 0.9);
+    }
+    
+    .header-mobile.header-mobile-sticky .mob-active{
+        color: rgba(0, 0, 0, 0.9);
+    }
+    
+    .moblang-action{
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+    
+    .mobnav-action{
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+    
+    .lang-icon,
+    .nav-icon{
+        transition: transform 0.5s;
+    }
+    
+    /*main/content*/
+    .main .container-60,
+    .container-60{
+        width: 90%;
+        margin: 0 5%;
+    }
+    
+    .main-title{
+        font-size: 2em;
+    }
+    
+    .main-par{
+        font-size: 1.2em;
+    }
+    
+    /*content*/
+    
+    .contenido{
+        padding: 40px 0 50px 0;
+    }
+    
+    .content-title{
+        font-size: 1.5em;
+    }
+    
+    /*contenido*/
+    .cont-mapa .container-60{
+        width: 100%;
+        margin: 0;
+    }
+    
+    .cont-mapa .direccion{
+        width: 90%;
+    }
+    
+    /*menu*/
+    
+    .menu-categ,
+    .vinos-categ{
+        display: none;
+    }
+    
+    .menu-categ-mob,
+    .vinos-categ-mob{
+        display: inline-block;
+        width: 80%;
+        margin: auto 10%;
+        padding: 30px 0 0 0;
+    }
+    
+    .categ-select{
+        width: 100%;
+        padding: 10px 5px;
+        border: 2px solid #C2B59B;
+        color: #231F20;
+        cursor: pointer;
+    }
+    
+    /*.categ-select option{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding: 5px;
+    }*/
+    
+    .categ-select option:checked{
+        background-color: #C2B59B;
+        color: white;
+    }
+    
+    .cont-menu .plato{
+        width: 100%;
+    }
+    
+    .plato figcaption .plato-title{
+        padding: 5px;
+    }
+    
+    .plato figcaption .plato-des,
+    .plato figcaption .plato-prec{
+        width: 80%;
+        margin:5px 10%;
+    }
+    
+    .plato figcaption .precio{
+        font-size: 1.2em;
+        font-family: 'open_sansbold';
+    }
+    
+    .plato figcaption .plato-prec{
+        padding: 5px;
+    }
+    
+    /*vinos*/
+    
+    .cont-vinos .vino,
+    .equipo .miembro{
+        width: 48%;
+        float: left;
+        margin-right: 4%;
+    }
+    
+    .cont-vinos .vino:nth-child(even),
+    .equipo .miembro:nth-child(even){
+        margin-right: 0;
+    }
+    
+    .plato figcaption .plato-title,
+    .vino figcaption .vino-title,
+    .miembro figcaption .miembro-title{
+        padding: 5px;
+    }
+    
+    .vino figcaption .vino-vi,
+    .vino figcaption .vino-prec,
+    .miembro figcaption .miembro-puesto{
+        width: 80%;
+        margin: 10px 10%;
+    }
+    
+    .vino figcaption .precio,
+    .miembro figcaption .miembro-rs a{
+        font-size: 1.2em;
+        font-family: 'open_sansbold';
+    }
+    
+    .vino figcaption .vino-prec{
+        padding: 5px;
+    }
+    
+    .ver-mas{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .btn-container{
+        width: 100%;
+        margin: 0;
+    }
+    
+    .ver-mas-btn,
+    .form .accion-btn,
+    .accion-btn{
+        width: 100%;
+    }
+    
+    /*subfooter*/
+    .subfooter-40,
+    .subfooter-20{
+        width: 100%;
+    }
+    
+    .subfooter-40 p{
+        text-align: center;
+    }
+    
+    .subfooter-40 .searchtxt{
+        width: 100%;
+        margin: 0;
+    }
+    
+    .subfooter-20{
+        padding: 0;
+    }
+    
+    .subfooter-20 .suscribirbtn{
+        width: 100%;
+        margin-top: 0;
+    }
+    
+    /**/
+    
+    footer .foot-icons{
+        width: 80%;
+        margin: 0 10%;
+    }
+    
+    footer .footer-49{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding: 0 0 20px 0;
+    }
+    
+    footer .footer-49:first-child{
+        text-align: center;
+    }
+    
+    footer .footer-2{
+        display: none;
+    }
+    
+}

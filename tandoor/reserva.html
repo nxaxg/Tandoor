@@ -8,10 +8,12 @@
     <meta name="viewport" content="width=device-width, init-ial-scale=1.0">
     <!--Site CSS-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile-style.css">
     <!--jquery-->
     <script src="js/jquery-1.11.3.js"></script>
     <!--Script-->
     <script src="js/sticky.js"></script>
+    <script src="js/sticky-mobile.js"></script>
     <!--Font awesome-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!--Site font-->
@@ -51,6 +53,34 @@
         </div>
     </header>
     
+    <header class="header-mobile">
+        <div class="container-90">
+            <div class="headermob-lang">
+                <span class="fa fa-globe lang-icon"></span>
+            </div>
+            <ul class="moblang-menu">
+                <li><a href="#" class="lang-sel">Español</a></li>
+                <li><a href="#">Inglés</a></li>
+                <li><a href="#">Portugués</a></li>
+                <li><a href="#">Hindi</a></li>
+            </ul>
+            <figure class="headermob-logo">
+                <img src="img/logo-sticky.png" alt="Sticky logo tandoor">
+            </figure>
+            <div class="headermob-nav">
+                <span class="fa fa-navicon nav-icon"></span>
+            </div>
+            <ul class="mobnav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="vinos.html">Vinos</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="reserva.html" class="nav-sel">Reserva</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="delivery.html" class="del">Delivery <span class="fa fa-cutlery"></span></a></li>
+            </ul>
+        </div>
+    </header>
     <!--main=header-->
     <section class="main mn-reserva">
         <div class="container-60">
@@ -64,7 +94,7 @@
         </div>
     </section>
     
-    <section id="content" class="content-1 contenido">
+    <section id="content" class="content-1 contenido cont-mapa">
         <div class="container-60">
             <h2 class="content-title">Nuestra dirección</h2>
             <div id="g-mapa-home" class="g-mapa">
