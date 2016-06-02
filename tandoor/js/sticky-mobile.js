@@ -2,6 +2,7 @@ $(document).ready(function(){
     //starting function
     $(".moblang-menu").hide();
     $(".mobnav-menu").hide();
+    $('.header-mobile').removeClass('header-mobile-sticky');
     //sticky header call
     stickyHeaderMobile();
     //lang-btn animation

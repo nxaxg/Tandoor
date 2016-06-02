@@ -21,7 +21,7 @@
     color: #c1bb91;
 }
 
-/**/
+/*no-mobile*/
 header.header-mobile{
     display: none;
 }
@@ -274,6 +274,8 @@ button:hover{
     background: url(../img/header-home-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     z-index: 1;
     position: relative;
 }
@@ -282,6 +284,7 @@ button:hover{
     background: url(../img/header-menu-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     z-index: 1;
     position: relative;
 }
@@ -290,6 +293,8 @@ button:hover{
     background: url(../img/header-vinos.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     z-index: 1;
     position: relative;
 }
@@ -298,6 +303,7 @@ button:hover{
     background: url(../img/header-quienes-somos.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     z-index: 1;
     position: relative;
 }
@@ -306,6 +312,8 @@ button:hover{
     background: url(../img/header-reserva-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     z-index: 1;
     position: relative;
 }
@@ -314,6 +322,8 @@ button:hover{
     background: url(../img/header-delivery.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     z-index: 1;
     position: relative;
 }
@@ -322,7 +332,9 @@ button:hover{
     background: url(../img/header-contacto.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 0;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 1;
     position: relative;
 }
 
