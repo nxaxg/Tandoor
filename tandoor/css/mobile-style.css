@@ -263,6 +263,43 @@
         width: 100%;
     }
     
+    /*reserva/delivery*/
+    .form .input-container{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .delivery-form .mas-comida-btn,
+    .delivery-form .mas-bebida-btn{
+        width: 8%;
+        float: left;
+        text-align: center;
+        margin: 0 2% 0 0;
+        padding: 2px;
+    }
+    
+    .delivery-form .input-container{
+        width: 90%;
+        float: left;
+        margin: 0 0 15px 10%;
+    }
+    
+    .delivery-form .input-container.f-ch{
+        margin-left: 0;
+    }
+    
+    /*contacto*/
+    .contact.main.mn-contacto,
+    .contact .container-60{
+        width: 100%;
+        margin: 0;
+    }
+    
+    .contact .contacto-form .input-48{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+    }
     /*subfooter*/
     .subfooter-40,
     .subfooter-20{
@@ -287,7 +324,7 @@
         margin-top: 0;
     }
     
-    /**/
+    /*footer*/
     
     footer .foot-icons{
         width: 80%;
